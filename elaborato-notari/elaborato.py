@@ -158,7 +158,7 @@ class images_emotions_dataset():
         return len(self.images)
 
     def __getitem__(self, idx):
-        folder_path = "/content/drive/My Drive/paintings_images/"
+        folder_path = "elaborato_notari/immagini_opere/"
         filename = str(self.images[idx]) + '.jpg'
         image_path = os.path.join(folder_path, filename)
         image = Image.open(image_path)
